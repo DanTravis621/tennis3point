@@ -5,25 +5,35 @@ CAPACITY
 16
 
 SHORT DESCRIPTION
-Three hours of fast singles under Fast Four rules. Continual play, not
-knockout - you keep playing from start to finish. All standards welcome.
+Three hours of fast singles - best of three Fast Four sets a match. Continual
+play, not knockout, so you keep playing from start to finish. All standards
+welcome.
 
 DESCRIPTION
 Three hours of fast singles. No knockout - you play right through.
 
-Clashpoint is a rotating singles session played under Fast Four rules: first to
-four games takes the set, sudden-death point at deuce, tie-break at three-all.
-Matches run 20 to 30 minutes, so you face a series of different opponents and
-keep playing from start to finish.
+Clashpoint is a rotating singles session played under Fast Four rules. Each match
+is best of three Fast Four sets - win two sets and the match is yours - and at
+one set all a traditional 7-point tiebreak settles it. Matches run 20 to 30
+minutes, so you face a series of different opponents and keep playing from start
+to finish.
 
 This one is an introduction to the Clashpoint system. Sixteen places, all
 standards welcome - come and see how it plays.
 
-FAST FOUR SCORING
+HOW A MATCH IS WON
+- Best of three Fast Four sets - first to two sets takes the match
+- At one set all, a traditional 7-point tiebreak decides it (first to seven, two
+  clear points)
+
+FAST FOUR SCORING, WITHIN EACH SET
 - First to four games wins the set
 - No advantage: at deuce, one sudden-death point, receiver chooses the side
 - Let serves are played
-- Tie-break at three games all, first to five points, sudden death at four-all
+- At three games all, a short tiebreak to five points, sudden death at four-all
+
+Note the two tiebreaks are different: five points to settle a set at 3-3, seven
+points to settle the match at one set all.
 
 HOW THE SESSION RUNS
 - Continual play, not knockout - nobody is eliminated, nobody sits out

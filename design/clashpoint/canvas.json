@@ -1,9 +1,25 @@
 {
   "artboards": [
-    { "file": "Main.dc.html", "x": 0, "y": 0, "w": 1800, "h": 440, "title": "Clashpoint banner 1800x440" }
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1800,
+      "h": 440,
+      "title": "Clashpoint banner 1800x440"
+    }
   ],
   "annotations": [
-    { "id": "placeholders", "x": 0, "y": 560, "w": 460, "text": "Date and time are set: Saturday 19 September, 2-5pm.\n\nStill to fill in: [PRICE] and [BOOKING LINK].\n\nThe accent colour is a tweak above the artboard - change it once and the ball, the band, the numerals and the rule all follow." }
+    {
+      "id": "notes",
+      "x": 0,
+      "y": 560,
+      "w": 460,
+      "text": "Final. Saturday 19 September, 2-5pm.\n\nPrice and booking are handled by the ClubSpark event itself, so they are deliberately not on the artwork.\n\nExport is 1800x440 to match the ClubSpark banner slot."
+    }
   ],
-  "launch": { "view": "focused", "file": "Main.dc.html" }
+  "launch": {
+    "view": "focused",
+    "file": "Main.dc.html"
+  }
 }

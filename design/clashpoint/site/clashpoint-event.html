@@ -1,0 +1,168 @@
+<title>Clashpoint at Preston Park</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --ink:#0D1211; --lime:#D8F651; --paper:#F7F9F4;
+    --dim:rgba(247,249,244,.72); --rule:rgba(247,249,244,.20);
+    --display:'Anton','Haettenschweiler','Impact',sans-serif;
+    --body:'Space Grotesk','Helvetica Neue',Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ink);color:var(--paper);font-family:var(--body);line-height:1.5;
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+  a{color:var(--lime)} a:hover{color:var(--paper)}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;padding:72px 0 64px;border-bottom:1px solid var(--rule)}
+  .hero .court{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  .hero .inner{position:relative}
+  .eyebrow{display:flex;align-items:center;gap:14px;font-size:clamp(13px,1.6vw,18px);font-weight:700;
+           letter-spacing:.22em;text-transform:uppercase}
+  .eyebrow i{display:block;width:38px;height:4px;background:var(--lime)}
+  h1{margin:18px 0 0;font-family:var(--display);font-weight:400;font-size:clamp(64px,13vw,168px);
+     line-height:.88;letter-spacing:-.005em;text-transform:uppercase}
+  .band{display:inline-flex;margin-top:20px;background:var(--lime);padding:10px 20px 13px}
+  .band span{font-family:var(--display);font-size:clamp(22px,3.4vw,36px);line-height:1;
+             letter-spacing:.045em;text-transform:uppercase;color:var(--ink)}
+  .lede{margin:22px 0 0;max-width:620px;font-size:clamp(17px,2vw,21px);color:var(--dim);text-wrap:pretty}
+  .when{margin:26px 0 0;font-size:clamp(20px,2.6vw,28px);font-weight:700;color:var(--lime)}
+
+  /* call to action */
+  .cta{display:inline-flex;align-items:center;gap:12px;margin-top:26px;padding:17px 30px;
+       background:var(--lime);color:var(--ink);font-size:19px;font-weight:700;letter-spacing:.02em;
+       text-decoration:none;border:2px solid var(--lime)}
+  .cta:hover{background:transparent;color:var(--lime)}
+  .cta svg{width:18px;height:18px;flex-shrink:0}
+  .cta-note{margin-top:12px;font-size:15px;color:var(--dim)}
+
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;
+         padding:40px 0;border-bottom:1px solid var(--rule)}
+  .stats b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(44px,6vw,72px);
+           line-height:1;color:var(--lime)}
+  .stats span{display:block;margin-top:4px;font-size:15px;font-weight:500;letter-spacing:.14em;
+              text-transform:uppercase;color:var(--dim)}
+
+  /* sections */
+  section{padding:56px 0;border-bottom:1px solid var(--rule)}
+  h2{margin:0 0 22px;font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,44px);
+     line-height:1.05;letter-spacing:.01em;text-transform:uppercase}
+  .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px}
+  ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px}
+  li{display:flex;gap:14px;font-size:17px}
+  li i{flex-shrink:0;width:11px;height:11px;margin-top:8px;background:var(--lime)}
+  p{margin:0 0 16px;font-size:17px;max-width:62ch;text-wrap:pretty}
+  p:last-child{margin-bottom:0}
+  .note{padding:18px 20px;border-left:3px solid var(--lime);background:rgba(216,246,81,.06);
+        font-size:16px;color:var(--dim)}
+  .order{display:flex;flex-direction:column;gap:0}
+  .order div{display:flex;gap:24px;padding:14px 0;border-top:1px solid var(--rule);font-size:17px}
+  .order div:last-child{border-bottom:1px solid var(--rule)}
+  .order b{font-family:var(--display);font-weight:400;font-size:22px;color:var(--lime);
+           min-width:96px;letter-spacing:.02em}
+
+  footer{padding:56px 0 72px;text-align:center}
+  footer h2{margin-bottom:10px}
+  footer p{margin-left:auto;margin-right:auto;color:var(--dim)}
+  @media (max-width:600px){ .stats{grid-template-columns:1fr;gap:26px} .order div{flex-direction:column;gap:2px} }
+</style>
+
+<div class="hero">
+  <svg class="court" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g transform="translate(600 310) rotate(-12) translate(-600 -310)" fill="none"
+       stroke="#F7F9F4" stroke-opacity=".11" stroke-width="3">
+      <rect x="120" y="-300" width="960" height="1220"/>
+      <rect x="120" y="60" width="960" height="500"/>
+      <line x1="120" y1="310" x2="1080" y2="310"/>
+      <line x1="600" y1="60" x2="600" y2="560"/>
+      <line x1="360" y1="-300" x2="360" y2="920"/>
+      <line x1="840" y1="-300" x2="840" y2="920"/>
+    </g>
+  </svg>
+  <div class="wrap inner">
+    <div class="eyebrow"><i></i>Preston Park &middot; Brighton</div>
+    <h1>Clashpoint</h1>
+    <div class="band"><span>Fast Four Singles</span></div>
+    <p class="lede">Three hours of fast singles. No knockout &mdash; you play right through.</p>
+    <p class="when">Saturday 19 September &middot; 2&ndash;5pm</p>
+    <a class="cta" href="https://clubspark.lta.org.uk/PrestonParkTennisCourts/EventsV2/Book/f3e28cc8-5a1f-45b8-b954-0437758f9afa">
+      Book your place
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+           stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+    </a>
+    <p class="cta-note">Booking is handled on ClubSpark. Sixteen places.</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="stats">
+    <div><b>3</b><span>Hours</span></div>
+    <div><b>16</b><span>Players</span></div>
+    <div><b>20&ndash;30</b><span>Min matches</span></div>
+  </div>
+
+  <section>
+    <h2>What it is</h2>
+    <div class="cols">
+      <div>
+        <p>Clashpoint is a rotating singles session played under Fast Four rules. You face a series of
+          different opponents and keep playing from start to finish. Nobody is eliminated and nobody
+          sits out.</p>
+        <p>This one is an introduction to the Clashpoint system. Good Club Standard and above &mdash;
+          come ready to compete.</p>
+      </div>
+      <div>
+        <ul>
+          <li><i></i>Continual play, not knockout</li>
+          <li><i></i>A new opponent each round</li>
+          <li><i></i>Matches run 20 to 30 minutes</li>
+          <li><i></i>You play for the full three hours</li>
+          <li><i></i>The rotation is explained in the briefing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How a match is won</h2>
+    <div class="cols">
+      <div>
+        <p><strong>Best of three Fast Four sets</strong> &mdash; first to two sets takes the match.
+          At one set all, a traditional 7-point tiebreak decides it (first to seven, two clear points).</p>
+      </div>
+      <div>
+        <ul>
+          <li><i></i>First to four games wins the set</li>
+          <li><i></i>No advantage: at deuce, one sudden-death point, receiver chooses the side</li>
+          <li><i></i>Let serves are played</li>
+          <li><i></i>At three games all, a short tiebreak to five points, sudden death at four-all</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note" style="margin-top:28px">The two tiebreaks are different: five points to settle a
+      set at 3&ndash;3, seven to settle the match at one set all.</p>
+  </section>
+
+  <section>
+    <h2>On the day</h2>
+    <div class="order">
+      <div><b>2.00pm</b><span>Arrival and briefing</span></div>
+      <div><b>2.15pm</b><span>Play begins</span></div>
+      <div><b>4.30pm</b><span>Final round</span></div>
+      <div><b>5.00pm</b><span>Finish</span></div>
+    </div>
+    <p style="margin-top:26px">Bring tennis shoes, a racket and water. Balls are provided. The courts
+      are outdoors, so dress for Brighton weather and bring a spare layer.</p>
+  </section>
+</div>
+
+<footer class="wrap">
+  <h2>Sixteen places</h2>
+  <p>Good Club Standard and above. Saturday 19 September, 2&ndash;5pm at Preston Park, Brighton.</p>
+  <a class="cta" href="https://clubspark.lta.org.uk/PrestonParkTennisCourts/EventsV2/Book/f3e28cc8-5a1f-45b8-b954-0437758f9afa">
+    Book on ClubSpark
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+         stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+  </a>
+</footer>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #D8F651; text-decoration: none; }
+    a:hover { color: #FF5A36; }
+  </style>
+</helmet>
+<div style="position: relative; width: 1080px; height: 1080px; overflow: hidden; background: #0D1211; font-family: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;">
+
+  <svg viewBox="0 0 1080 1080" style="position: absolute; inset: 0; width: 100%; height: 100%;" aria-hidden="true">
+    <g transform="translate(540 540) rotate(-17) translate(-540 -540)" fill="none" stroke="#F7F9F4" stroke-opacity="0.10" stroke-width="3">
+      <rect x="118" y="-140" width="844" height="1360"/>
+      <rect x="118" y="160" width="844" height="760"/>
+      <line x1="118" y1="540" x2="962" y2="540"/>
+      <line x1="540" y1="160" x2="540" y2="920"/>
+      <line x1="270" y1="-140" x2="270" y2="1220"/>
+      <line x1="810" y1="-140" x2="810" y2="1220"/>
+    </g>
+  </svg>
+
+  <svg viewBox="0 0 200 200" style="position: absolute; top: 56px; right: 56px; width: 224px; height: 224px;" aria-hidden="true">
+    <circle cx="100" cy="100" r="96" fill="{{accent}}"/>
+    <path d="M20 46 Q 96 100 20 154" fill="none" stroke="#0D1211" stroke-width="7"/>
+    <path d="M180 46 Q 104 100 180 154" fill="none" stroke="#0D1211" stroke-width="7"/>
+  </svg>
+
+  <div style="position: relative; display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box; padding: 76px;">
+
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <span style="width: 46px; height: 4px; background: {{accent}};"></span>
+      <span style="font-size: 22px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #F7F9F4;">Preston Park &middot; Brighton</span>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 32px;">
+      <h1 style="margin: 0; font-family: 'Anton', 'Haettenschweiler', 'Impact', sans-serif; font-weight: 400; font-size: 222px; line-height: 0.82; letter-spacing: -0.005em; text-transform: uppercase; color: #F7F9F4;">Clash<br>Point</h1>
+      <div style="display: flex; align-self: flex-start; background: {{accent}}; padding: 15px 28px 19px;">
+        <span style="font-family: 'Anton', 'Haettenschweiler', 'Impact', sans-serif; font-weight: 400; font-size: 46px; line-height: 1; letter-spacing: 0.045em; text-transform: uppercase; color: #0D1211;">Fast Four Singles</span>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 32px;">
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; border-top: 3px solid rgba(247, 249, 244, 0.22); padding-top: 26px;">
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <span style="font-family: 'Anton', 'Haettenschweiler', 'Impact', sans-serif; font-weight: 400; font-size: 78px; line-height: 1; color: {{accent}};">3</span>
+          <span style="font-size: 19px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(247, 249, 244, 0.72);">Hours</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <span style="font-family: 'Anton', 'Haettenschweiler', 'Impact', sans-serif; font-weight: 400; font-size: 78px; line-height: 1; color: {{accent}};">16</span>
+          <span style="font-size: 19px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(247, 249, 244, 0.72);">Players</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <span style="font-family: 'Anton', 'Haettenschweiler', 'Impact', sans-serif; font-weight: 400; font-size: 78px; line-height: 1; color: {{accent}};">15</span>
+          <span style="font-size: 19px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(247, 249, 244, 0.72);">Minute matches</span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <span style="font-size: 27px; font-weight: 700; line-height: 1.25; color: #F7F9F4; text-wrap: pretty;">Group stage, then knockout. All standards welcome.</span>
+        <span style="font-size: 24px; font-weight: 500; letter-spacing: 0.03em; color: {{accent}};">[DATE] &middot; [START TIME] &middot; [PRICE]</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{"$preview":{"width":1080,"height":1080},"accent":{"editor":"color","default":"#D8F651","options":["#D8F651","#FF5A36","#5AD1FF","#F7F9F4"]}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#D8F651' };
+  }
+}
+</script>
+</body>
+</html>

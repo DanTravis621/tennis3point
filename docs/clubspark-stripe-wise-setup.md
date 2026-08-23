@@ -82,15 +82,25 @@ sets of GBP account details** across your main account, Jars and Business Groups
 Wise Business account can give each Stripe account a distinct sort code and account number,
 with the money landing in a separate Jar.
 
-**Name matching matters.** Stripe expects the payout account to belong to the Stripe
-account holder. If a Stripe account is registered to your coaching business, the Wise
-details it pays out to need to be in that same name. A mismatch is the usual reason a
-payout account gets rejected or a payout is reversed.
+**Name matching is the thing to get right.** Stripe expects the payout account to belong to
+the Stripe account holder. Since all three Stripe accounts will be registered to your one
+business, all three Wise destinations must be held in that same business name. A mismatch
+is the usual reason a payout account is rejected or a payout is reversed.
+
+That has a practical consequence for how you hold the Wise side:
+
+- **Jars inside one Wise Business account** — every set of GBP details is in your business
+  name by definition, so name matching is automatic. This is the low-friction route.
+- **Genuinely separate Wise logins** — Wise generally issues one Business account per legal
+  entity, so separate logins usually means separate entities (or a personal account). If a
+  Wise account is in a different name from the Stripe account paying into it, expect
+  trouble. If they really are separate entities, then the Stripe accounts need to be
+  registered to those entities too, each with its own tax details.
 
 ### 3. Connect the accounts to ClubSpark
 
 In the ClubSpark admin area, open the **Payments** module and click **Payment Options**
-(top right). You need Super Admin or Admin rights on the venue.
+(top right). As venue owner you will have the Super Admin rights this needs.
 
 Add each Stripe account in turn. The connect flow hands you to Stripe — make sure you pick
 the intended Stripe account there, since it defaults to whichever you last used.
@@ -115,9 +125,10 @@ the first tournament rather than after.
 
 ## Things to be aware of
 
-- **Venue permissions.** Preston Park is a park venue. If the ClubSpark venue is owned by
-  Brighton & Hove City Council or an operator rather than by you, they control Payment
-  Options and will need to make these changes or grant you Admin.
+- **One legal entity, several Stripe accounts.** As the owner-operator you are running all
+  three streams through one business, which Stripe allows — separate accounts are only
+  *required* when the entities have different tax details. But it means every Wise account
+  you pay out to must be held in that same business name (see below).
 - **Changing a module's Stripe account mid-season.** Existing subscriptions and
   instalment plans (memberships, courses paid in instalments) are tied to the Stripe
   account that created them. Reassigning a module does not migrate them — check with
